@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Growbiz Logistics: A Safe, Fast And Reliable Logistics Solution</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/fav.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="css/vender/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/gs-stylesheet.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="page-header__navbar" id="GBHeader">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-12">
+						<a href="\">
+							<img src="images/growbiz-logo.png" class="img-fluid logo-modifier">
+						</a>
+					</div>
+					<div class="col-lg-9 col-12">
+						<div class="page-header__menu page-menu">
+							<input class="menu-btn" type="checkbox" id="menu-btn" />
+							<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+							<ul class="menu">
+								<li><a href="/">Home</a></li>
+								<li><a href="about-us.html">About us</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="contact-us.html" class="active">Contact us</a></li>
+								<li><a href="privacy-policy.html">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="gb-topbanner">
+		<div class="gb-topbanner__bg contact--bg">
+			<div class="container">
+				<h1>Contact Us</h1>
+				<div class="gb-topbanner__breadcrums">
+					<a href="/">Home</a>
+					<a href="javascript:;">Contact Us</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact-form contact-form--mod page-space">
+		<div class="container">
+			<div class="form__wrapper">
+				<div class="row">
+					<div class="col-lg-7">
+						<img src="images/contact.jpg" class="img-fluid">
+					</div>
+					<div class="col-lg-5">
+						<div class="page-contact__bgform">
+							<h2 class="title-heading">Get in Touch</h2>
+							<div class="page-formwrapper">
+								<form method="post" action="contact.php" id="myform" onsubmit = "return validate();">
+									<div class="page-forminput">
+										<input type="text" name="name" id="name" placeholder="Name *" name="">
+										<div id="name_message" class="error__msg"></div>
+									</div> 
+									<div class="page-forminput">
+										<input type="email" name="email" id="email" placeholder="Email *" name="">
+										<div id="email_message" class="error__msg"></div>
+									</div>
+									<div class="page-forminput">
+										<input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"maxlength = "10" name="phone" id="phone" placeholder="Mobile *" name="">
+										<div id="phone_message" class="error__msg"></div>
+									</div>
+									<div class="page-forminput">
+										<input type="text" name="company" id="company" placeholder="company *" name="">
+										<div id="company_message" class="error__msg"></div>
+									</div>
+									<div class="page-forminput">
+										<textarea class="textarea--height" placeholder="Message" name="message" id="message"></textarea>
+									</div>
+									<div class="page-forminput page-btn">
+										<input type="submit" name="submit" value="Submit Enquiry" class="btn-action">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container--bg">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 class="text-center title-heading">Office Address</h3>
+					<ul class="contact-form__list">
+						<li class="col-lg-4">
+							<h3>Registered office</h3>
+							<i class="gs-home"></i>
+							<h5>Address B 102, Atharva Apt, near Mehta Pharmaceuticals, Kopri Naka</h5>
+							<p>Virar Maharashtra 401305</p>
+						</li>
+						<li class="col-lg-4">
+							<h3>Headquarter</h3>
+							<i class="gs-home"></i>
+							<h5>Shop No. 6100, Krishna Nagar, Yadav Compound, Opp. Gokul Park, Sativali, Vasai (E), Distt.</h5>
+							<p>Palghar - 401208.</p>
+						<li class="col-lg-4">
+							<h3>Bhiwandi office</h3>
+							<i class="gs-home"></i>
+							<h5>Amita Complex, Survey No. 54, Opp Laxman weight bridge, Near Tushar hotel, Dopada road,</h5>
+							<p>Bhiwandi - 421302.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container--bg">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 class="text-center title-heading">Call us</h3>
+					<ul class="contact-form__list">
+						<li class="col-lg-4 offset-lg-3">
+							<i class="gs-call"></i>
+							<h5><a href="tel:+917400284647">+917400284647</a></h5>
+							<p>Mon to Fri 9am to 6pm</p>
+						</li>
+						<li class="col-lg-4">
+							<i class="gs-email"></i>
+							<h5><a href="mailto:info@growbizlogistics.com">info@growbizlogistics.com</a></h5>
+							<p>Send us your query anytime!</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.127670028051!2d72.86862431490631!3d19.406888986899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMTnCsDI0JzI0LjgiTiA3MsKwNTInMTQuOSJF!5e0!3m2!1sen!2sin!4v1636572901282!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</section>
+	<footer class="page-footer page-space">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="page-footer__links">
+						<h3>COMPANY</h3>
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="about-us.html">About us</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact-us.html">Contact us</a></li>
+							<li><a href="privacy-policy.html">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="page-footer__logo">
+						<a href="\">
+							<img src="images/growbiz-logo.png" class="img-fluid logo-modifier-footer">
+						</a>
+						<div class="page-social">
+							<a href="https://www.facebook.com/growbizlogistics/" target="_blank">
+								<i class="gs-facebook"></i>
+							</a>
+							<a href="https://twitter.com/GrowbizLogistic" target="_blank">
+								<i class="gs-twitter"></i>
+							</a>
+							<a href="https://www.linkedin.com/company/growbizlogistics/" target="_blank">
+								<i class="gs-linkedin2"></i>
+							</a>
+							<a href="https://www.instagram.com/growbizlogistics/" target="_blank">
+								<i class="gs-instagram"></i>
+							</a>
+							<a href="https://wa.me/+917400284647text=Hello! Growbizsss logistic" title="click to open whatsapp chat">
+								<i class="gs-whatsapp"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__addmain">
+				<div class="row">
+					<div class="col-lg-4 border__modright">
+						<div class="footer__address">
+							<h3>Registered office</h3>
+							<i class="gs-home"></i>
+							<h5>Address B 102, Atharva Apt, near Mehta Pharmaceuticals, Kopri Naka</h5>
+							<p>Virar Maharashtra 401305</p>
+						</div>
+					</div>
+					<div class="col-lg-4 border__modright">
+						<div class="footer__address">
+							<h3>Headquarter</h3>
+							<i class="gs-home"></i>
+							<h5>Shop No. 6100, Krishna Nagar, Yadav Compound, Opp. Gokul Park, Sativali, Vasai (E), Distt.</h5>
+							<p>Palghar - 401208.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="footer__address">
+							<h3>Bhiwandi office</h3>
+							<i class="gs-home"></i>
+							<h5>Amita Complex, Survey No. 54, Opp Laxman weight bridge, Near Tushar hotel, Dopada road,</h5>
+							<p>Bhiwandi - 421302.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<p class="page-footer__copyright"><strong>GST No.</strong> &nbsp;27AAJCG1532H1ZQ</p>
+			</div>
+			<div class="row">
+				<p class="page-footer__copyright">© 2021 Growbiz Logistics. All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		// Header Fixed
+        window.onscroll = function () { myFunction() };
+        var header = document.getElementById("GBHeader");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("gb-sticky");
+            }
+            else {
+                header.classList.remove("gb-sticky");
+            }
+        }
+        function validate(){
+		  var name = document.getElementById("name").value;
+		  var phone = document.getElementById("phone").value;
+		  var email = document.getElementById("email").value;
+		  var company = document.getElementById("company").value;
+		  var error_message = document.getElementById("name_message");
+		  var error_message = document.getElementById("phone_message");
+		  var error_message = document.getElementById("email_message");
+		  var error_message = document.getElementById("company_message");
+		  var text;
+		  if(name.length < 5){
+		    text = "Please Enter valid Name";
+		    name_message.innerHTML = text;
+		    return false;
+		  }
+		  if(email.indexOf("@") == -1 || email.length < 6){
+		    text = "Please Enter valid Email";
+		    email_message.innerHTML = text;
+		    return false;
+		  }
+		  if(isNaN(phone) || phone.length != 10){
+		    text = "Please Enter valid Phone Number";
+		    phone_message.innerHTML = text;
+		    return false;
+		  }
+		  if(company.length < 5){
+		    text = "Please Enter Company Name";
+		    company_message.innerHTML = text;
+		    return false;
+		  }
+		  //alert("Form Submitted Successfully!");
+		  return true;
+		}
+	</script>
+</body>
+</html>

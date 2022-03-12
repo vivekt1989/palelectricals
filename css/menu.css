@@ -1,0 +1,224 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4b4b4b;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.m-50 {
+  margin-bottom: 50px;
+}
+.hide {
+  display: none !important;
+}
+.page-social a {
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  margin-right: 20px;
+}
+.page-social a:last-child {
+  margin-right: 0;
+}
+.page-social a:hover,
+.page-social a:active {
+  color: #42abe2;
+  transform: rotateY(180deg);
+}
+.page-social a i {
+  font-size: 18px;
+  display: inline-block;
+  transform: rotateY(0deg);
+  transition: all 0.4s ease-out 0s;
+}
+.page-space {
+  padding: 90px 0;
+}
+@media only screen and (max-width: 767px) {
+  .page-space {
+    padding: 35px 0;
+  }
+}
+.mb--30 {
+  margin-bottom: 30px;
+}
+.btn-action {
+  background: #42abe2;
+  padding: 27px 44px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  -moz-user-select: none;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 0;
+  margin-bottom: 0;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 1;
+  border: 0;
+  overflow: hidden;
+  margin: 0;
+  text-decoration: none;
+}
+header {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.pe-header__navbar a {
+  position: relative;
+}
+.pe-header__navbar a span {
+  position: absolute;
+  top: 24px;
+  left: 30%;
+  font-size: 11px;
+  color: #42abe2;
+  font-style: italic;
+}
+.page-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.page-menu ul li a {
+  display: block;
+  padding: 20px;
+  color: #4b4b4b;
+  font-size: 18px;
+}
+.page-menu ul li a.active {
+  color: #42abe2;
+}
+@media only screen and (max-width: 767px) {
+  .page-menu ul li a {
+    padding: 10px 0;
+  }
+}
+.page-menu ul li a:hover {
+  color: #42abe2;
+}
+.page-menu .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.page-menu .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+@media only screen and (max-width: 767px) {
+  .page-menu .menu-icon {
+    padding: 28px 0;
+  }
+}
+.page-menu .navicon {
+  background: #313764;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+.page-menu .navicon:after,
+.page-menu .navicon:before {
+  background: #313764;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.page-menu .menu-icon .navicon:before {
+  top: 5px;
+}
+.page-menu .menu-icon .navicon:after {
+  top: -5px;
+}
+.page-menu .menu-btn {
+  display: none;
+}
+.page-menu .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+.page-menu .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.page-menu .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.page-menu .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.page-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.page-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/* 48em = 768px */
+@media (min-width: 48em) {
+  .page-menu li {
+    float: left;
+  }
+  .page-menu li a {
+    padding: 20px 30px;
+  }
+  .page-menu .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .page-menu .menu-icon {
+    display: none;
+  }
+}
+footer,
+.pe-footer {
+  background-color: #4b4b4b;
+}
+footer h3,
+.pe-footer h3 {
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.7;
+}
+footer ul,
+.pe-footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer ul li,
+.pe-footer ul li {
+  display: inline-block;
+}
+footer ul li a,
+.pe-footer ul li a {
+  padding-right: 20px;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.7;
+}
+footer__copyright,
+.pe-footer__copyright {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  opacity: 0.8;
+}
